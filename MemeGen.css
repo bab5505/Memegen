@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 3%;
+  }
+  
+  .container-fluid {
+    text-align: center;
+  }
+  
+  h1 {
+    position: relative;
+    left: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-decoration: underline black;
+    font-size: 4em;
+  }
+  
+  .letter {
+    transition: color 500ms;
+    }
+  
+    .btn {
+      margin: 1.5%;
+      font-weight: bold;
+      display: flex; 
+      padding: 10px 15px;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      border-radius: 15px;
+      color: rgb(0, 0, 0);
+      box-shadow: 0 9px rgb(71, 71, 71);
+      background-color: rgb(68, 233, 76);
+  }
+  
+  .btn:hover {background-color: rgb(201, 235, 6)
+  }
+  
+  .btn:active {
+      background-color: rgb(68, 233, 76);
+      box-shadow: 0 5px rgb(2, 2, 2);
+      transform: translateY(4px);
+  }
+  
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      font-size: 2rem;
+      position: relative;
+    left: 10%;
+  }
+  
+  
+  .background,
+  .meme-gallery {
+      background-color: blanchedalmond;
+      padding: 4%;
+  }
+  
+  .title {
+    width: 850px;
+    }
+  
+  
+  .gallery {
+      list-style: none;
+      width: 100%;
+  }
+  
+  .meme-img{
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      opacity: 1;
+      margin: 1%;
+      width: 500px;
+      height: auto;
+  }
+  
+  img {width: 500px;}
+  
+  .meme-img:hover {opacity: 0.6;}
+  
+  .delete {
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -40%);
+      width: 500px;
+      height: 250px;
+      content: "Remove";
+      position: absolute;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1000%;
+      opacity: 0;
+  }
+  
+  .delete:hover {
+      opacity: 1.6;
+      z-index: 20;
+  }
+  
+  .text {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      width: 500px;
+      font-size: 450%;
+      line-height: 1.1em;
+      letter-spacing: 1.3px;
+      font-weight: bolder;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+      opacity: 1;
+      color: black;
+     -webkit-text-fill-color: white; 
+     -webkit-text-stroke-width: 2px;
+     -webkit-text-stroke-color: black;
+     text-transform: uppercase;
+  }
+  
+  .text:hover {opacity: 0.6;}
+  
+  .top {
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      max-height: 50%;
+  }
+  
+  .bottom {
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      max-height: 50%;
+  }
+  
+  
+  @media only screen and (max-width: 1200px) {
+  
+  }
+  
+  img,
+  .meme-img,
+  .delete,
+  .text {width: 350px;}
+  
+  .text {font-size: 220%;}
+  

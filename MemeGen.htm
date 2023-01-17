@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="MemeGen.css">
+	<title>Meme Generator</title>
+</head>
+<body>
+	<div class="background">
+	<header class="container-fluid">
+			<div class="container mx-auto text-center mb-5 title">
+				<h1 class="text-info">
+                    <span class="letter">M</span>
+                    <span class="letter">e</span>
+                    <span class="letter">m</span>
+                    <span class="letter">e</span>
+                    <span class="letter">-</span>
+                    <span class="letter">G</span>
+                    <span class="letter">e</span>
+                    <span class="letter">n</span>
+                    <span class="letter">e</span>
+                    <span class="letter">r</span>
+                    <span class="letter">a</span>
+                    <span class="letter">t</span>
+                    <span class="letter">o</span>
+                    <span class="letter">r</span>
+                    <span class="letter">!</span>
+                </h1>
+				<h2>Fill out form to create a meme below.</h2>
+		</div>
+		<div class="steps">
+			<p></p>
+		</div>
+	</header>
+	<section class="container"> 
+		<form id="meme-form">
+			<div class="group">
+				<label for="link-to-pic" class="col">Image URL Here:</label>
+			<div class="col">
+      			<input type="url" class="form-control" id="uploaded-img" placeholder="Your URL Goes Here" required style="width:1000px; font-size:14pt;">
+   			 </div>
+			 </div>
+             <br></br>
+             <div class="group">
+				<label for="text-on-top" class="col">Text on top:</label>
+			<div class="col">
+      			<input type="text" class="form-control" id="text-top" placeholder="(Optional)" style="width:1000px; font-size:14pt;">
+    		</div>
+		</div>
+		<br></br>
+        <div class="group">
+				<label for="text-on-bottom" class="col">Text on Bottom:</label>
+			<div class="col">
+      			<input type="text" class="form-control" id="text-bottom" placeholder="(Optional)" style="width:1000px; font-size:14pt;">
+    		</div>
+		</div>
+		<div class="group">
+				<label class="col"></label>
+			<div class="col">
+      			<input type="submit" class="btn btn-success" value="Generate it!">
+    		</div>
+		</div>
+		</form>
+		<div class="line"></div>
+	</section>
+</div>
+<section class="meme-gallery">
+	<ul class="gallery">
+	</ul>
+</section>
+	<script src="MemeGen.js"></script>
+</body>
+</html>
